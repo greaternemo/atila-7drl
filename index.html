@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ATILA</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body onload="PLAY.init()">
+        <header></header>
+        <main>
+            <div id="game_area">
+                <div id="msg_panel">
+                </div>
+                <!-- <div id="debug_tools"> -->
+                <div id="opt_panel">
+                    <!--<button id="add_line" onclick="doWelcome();">
+                        spam 'WELCOME'
+                    </button>-->
+                    <button class='control_button' id="do_over" onclick="RIP();">
+                        Restart Game
+                    </button>
+                    <button class='control_button' id="ctrl_loop" onclick="SIG('toggleGameLoop');">
+                        Pause Game
+                    </button>
+                    <button class='control_button' id="loop_speed" onclick="SIG('toggleGameLoopDelay');">
+                        Speed Up
+                    </button>
+                </div>
+                <!--
+                <div class="game_buttons">
+                    <div class="button_box box_A">
+                        <button class="game_button button_A"></button>
+                    </div>
+                    <div class="button_box box_B">
+                        <button class="game_button button_B"></button>
+                    </div>
+                    <div class="button_box box_C">
+                        <button class="game_button button_C"></button>
+                    </div>
+                -->
+                </div>
+            </div>
+        </main>
+    </body>
+    <!--<script src="https://github.com/galaxykate/tracery/blob/master/js/tracery.min.js"></script>-->
+    <script src="play.js"></script>
+    <script src="js/author.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/factory.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/item.js"></script>
+    <script src="js/loop.js"></script>
+    <script src="js/mob.js"></script>
+    <script src="js/narrator.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/registry.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/story.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/vignette.js"></script>
+</html>

@@ -1,0 +1,58 @@
+html {
+    background-color: black;
+    overflow: auto;
+}
+
+#game_area {
+    margin: 0 auto;
+    min-height: 520px;
+    height: 90%;
+    width: 420px;
+}
+
+#msg_panel {
+    max-width: 400px;
+    width: 400px;
+    min-height: 500px;
+    height: 500px;
+    max-height: 500px;
+    overflow: auto;
+    /*background-color: #9c413e;*/
+    /*background-color: darkslategray;*/
+    background-color: black;
+    /*color: white;*/
+    color: lightgray;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.control_button {
+    width: 30%;
+}
+
+.screen_canvas {
+    width: 320px;
+    height: 320px;
+    margin: 40px;
+}
+
+.game_buttons {
+    display: flex;
+    align-items: center;
+}
+
+.button_box {
+    min-width: 50px;
+    min-height: 50px;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.game_button {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+

@@ -1,0 +1,12 @@
+Author: constructs the story. 
+The Author holds the logic that simulates the game and compiles the outcome into a Story.
+
+Story: is the story???
+The Story is the construct that holds the structure of the simulated game, composed of Vignettes.
+
+Vignette: comprises the story
+Each Vignette is a self-contained encounter, a short story, that plays out according to the Author's simulation.
+
+Where do we put the logic to 'play' the game?
+Author, right?
+
