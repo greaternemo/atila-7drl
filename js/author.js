@@ -283,10 +283,10 @@ PLAY.Author.prototype.spendItems = function (aNum) {
 PLAY.Author.prototype.getEmptyGearSlots = function () {
     let player = GCON('OVER_PLAYER');
     let playerBase = GCON('PLAYER_BASE');
-    let gearSlots = playerBase.gearSlots;
+    let gearSlots = [...playerBase.gearSlots];
     let emptySlots = [];
     
-    for (let aSlot in [...gearSlots]) {
+    for (let aSlot of [...gearSlots]) {
         if (player.gear[aSlot] == 'empty') {
             emptySlots.push(aSlot);
         }
@@ -298,10 +298,10 @@ PLAY.Author.prototype.getEmptyGearSlots = function () {
 PLAY.Author.prototype.getFullGearSlots = function () {
     let player = GCON('OVER_PLAYER');
     let playerBase = GCON('PLAYER_BASE');
-    let gearSlots = playerBase.gearSlots;
+    let gearSlots = [...playerBase.gearSlots];
     let fullSlots = [];
     
-    for (let aSlot in [...gearSlots]) {
+    for (let aSlot of [...gearSlots]) {
         if (player.gear[aSlot] != 'empty') {
             fullSlots.push(aSlot);
         }
@@ -318,7 +318,7 @@ PLAY.Author.prototype.getRandomGear = function () {
     let emptySlots = SIG('getEmptyGearSlots');
     let chosenSlot = SIG('randFromArray', emptySlots);
     
-    let aMsg = 'You find a nice-looking ' + chosenSlot + 'and take it along with you.';
+    let aMsg = 'You find a nice-looking ' + chosenSlot + ' and take it along with you.';
     SIG('enscribe', aMsg);
     player.gear[chosenSlot] = chosenStat;    
 }
